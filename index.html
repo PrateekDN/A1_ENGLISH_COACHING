@@ -22,16 +22,16 @@
             display: none;
         }
 
-        /* --- UPDATED BACKGROUNDS --- */
+        /* --- LANDING PAGE BACKGROUND (KEPT AS IS) --- */
         .vibrant-bg {
             background: linear-gradient(-135deg, #e8f1f2 0%, #1e96fc 80%);
             background-attachment: scroll; 
             width: 100%; 
         }
 
-        /* NEW: Blue Background for Second Layer (Matches How We Teach) */
+        /* --- CONTENT SECTION BACKGROUND (KEPT #389efc) --- */
         .blue-content-bg {
-            background: linear-gradient(135deg, #60A5FA 0%, #1e96fc 100%);
+            background: #389efc;
             background-attachment: scroll;
             width: 100%;
         }
@@ -57,7 +57,7 @@
             100% { transform: translateY(0px); }
         }
         
-        /* UPDATED NAV CSS FOR FLOATING LOOK */
+        /* UPDATED NAV CSS */
         .glass-nav {
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(16px);
@@ -113,7 +113,7 @@
                     <div class="bg-white text-indigo-700 p-1.5 rounded-lg shadow-lg">
                         <i data-lucide="book-open" class="w-6 h-6"></i>
                     </div>
-                    <span>A-1 COACHING</span>
+                    <span>A-1 ENGLISH COACHING</span>
                 </a>
                 
                 <div class="hidden md:flex gap-8 text-sm font-semibold text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
@@ -156,19 +156,18 @@
                             <span class="absolute inset-0 w-full h-full -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out z-0 pointer-events-none">
                                 <span class="absolute inset-0 bg-gradient-to-r from-transparent to-transparent w-1/2 -skew-x-12 transform origin-left via-white/10"></span>
                             </span>
+                            
                             <span class="relative z-10 group-hover:text-indigo-300 transition-colors duration-300 text-indigo-400">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
                             </span>
+                            
                             <span class="relative z-10 text-sm font-bold tracking-wide">Start Learning Now</span>
                             <span class="relative z-10 group-hover:text-white transition-all duration-300 group-hover:translate-x-0.5 text-neutral-400">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </span>
+                            
                         </a>
                     </div>
-                    <a href="#about" class="px-6 py-4 text-sm font-semibold text-white hover:text-yellow-300 transition-colors flex items-center gap-2 group">
-                        <i data-lucide="play-circle" class="w-5 h-5 group-hover:scale-110 transition-transform"></i> 
-                        Watch Demo
-                    </a>
                 </div>
             </div>
             <div class="relative lg:h-[600px] flex items-center justify-center animate-float">
@@ -218,7 +217,7 @@
         </section>
     </div>
 
-    <div id="content-wrapper" class="relative z-20 mt-[100vh] blue-content-bg shadow-[0_-20px_50px_rgba(0,0,0,0.5)] rounded-[3rem] pt-32">
+    <div id="content-wrapper" class="relative z-20 mt-[100vh] blue-content-bg shadow-[0_-20px_50px_rgba(0,0,0,0.5)] rounded-[3rem] pt-24">
         
         <div class="bg-grid-pattern"></div>
 
@@ -229,7 +228,7 @@
                     <div class="bg-white text-indigo-700 p-1.5 rounded-lg shadow-lg">
                         <i data-lucide="book-open" class="w-6 h-6"></i>
                     </div>
-                    <span>A-1 COACHING</span>
+                    <span>A-1 ENGLISH COACHING</span>
                 </a>
                 
                 <div class="hidden md:flex gap-8 text-sm font-semibold text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
@@ -249,10 +248,10 @@
             </div>
         </nav>
 
-        <section class="py-24 relative z-10">
+        <section class="pt-8 pb-20 relative z-10">
             <div class="max-w-7xl mx-auto px-6">
                 
-                <div id="stats-section" class="w-full bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-8 py-2 mb-20 shadow-2xl">
+                <div id="stats-section" class="w-full bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-8 py-2 mb-10 shadow-2xl">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
                         <div class="p-4">
                             <p class="text-5xl lg:text-6xl font-black text-white mb-2 font-sans tracking-tight">
@@ -275,38 +274,58 @@
                     </div>
                 </div>
 
-                <div class="text-center mb-16">
+                <div class="text-center mb-10">
                     <h2 class="text-4xl font-bold text-white mb-2">Why Choose Us?</h2>
                     <div class="w-20 h-1 bg-yellow-400 mx-auto rounded-full"></div>
                 </div>
-                <div class="grid md:grid-cols-4 gap-6">
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group">
-                        <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                            <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+
+                <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group flex flex-col justify-center">
+                        <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                <i data-lucide="heart-handshake" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Personal Care</h3>
+                                <p class="text-slate-500 font-medium leading-relaxed">We don't just teach classes; we mentor individuals. Every student gets focus.</p>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Personal Care</h3>
-                        <p class="text-slate-500 font-medium leading-relaxed">We don't just teach classes; we mentor individuals. Every student gets focus.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group">
-                        <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                            <i data-lucide="book-a" class="w-7 h-7"></i>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group flex flex-col justify-center">
+                        <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                <i data-lucide="book-a" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Logic > Rote</h3>
+                                <p class="text-slate-500 font-medium leading-relaxed">Stop memorizing. Start understanding. We build your grammar logic.</p>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Logic > Rote</h3>
-                        <p class="text-slate-500 font-medium leading-relaxed">Stop memorizing. Start understanding. We build your grammar logic.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group">
-                        <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                            <i data-lucide="pen-tool" class="w-7 h-7"></i>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group flex flex-col justify-center">
+                         <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                <i data-lucide="pen-tool" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Exam Focused</h3>
+                                <p class="text-slate-500 font-medium leading-relaxed">Specific strategies for CBSE & ICSE to maximize your answer sheet marks.</p>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Exam Focused</h3>
-                        <p class="text-slate-500 font-medium leading-relaxed">Specific strategies for CBSE & ICSE to maximize your answer sheet marks.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group">
-                        <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                            <i data-lucide="zap" class="w-7 h-7"></i>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group flex flex-col justify-center">
+                         <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                <i data-lucide="zap" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Zero Fear</h3>
+                                <p class="text-slate-500 font-medium leading-relaxed">Transform from nervous to fluent. Speak english without hesitation.</p>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Zero Fear</h3>
-                        <p class="text-slate-500 font-medium leading-relaxed">Transform from nervous to fluent. Speak english without hesitation.</p>
                     </div>
                 </div>
             </div>
@@ -358,45 +377,55 @@
             </div>
         </section>
 
-        <section id="methodology" class="py-24 relative z-10">
+        <section id="methodology" class="pt-16 pb-32 relative z-10">
             <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-20">
+                <div class="text-center max-w-3xl mx-auto mb-12">
                     <h2 class="text-4xl font-bold text-white mb-6">How We Teach</h2>
                     <p class="text-indigo-100 text-lg">A structured 4-step roadmap to guarantee your improvement.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div class="bg-indigo-800/50 backdrop-blur-md p-8 rounded-2xl border border-indigo-400/30 text-center shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:bg-indigo-800/80 transition-all duration-300">
-                        <div class="w-16 h-16 mx-auto bg-white text-indigo-700 rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                            <span class="text-2xl font-bold">1</span>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+                        <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center shadow-inner group-hover:bg-indigo-600 group-hover:text-white group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <span class="text-3xl font-bold font-sans">1</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Clarity</h3>
-                        <p class="text-indigo-200 text-sm leading-relaxed">Deep dive into concepts. No doubts left unanswered.</p>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Clarity</h3>
+                            <p class="text-slate-500 font-medium leading-relaxed">Deep dive into concepts. No doubts left unanswered.</p>
+                        </div>
                     </div>
 
-                    <div class="bg-indigo-800/50 backdrop-blur-md p-8 rounded-2xl border border-indigo-400/30 text-center shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:bg-indigo-800/80 transition-all duration-300">
-                        <div class="w-16 h-16 mx-auto bg-white text-indigo-700 rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                            <span class="text-2xl font-bold">2</span>
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+                        <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center shadow-inner group-hover:bg-indigo-600 group-hover:text-white group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300">
+                            <span class="text-3xl font-bold font-sans">2</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Practice</h3>
-                        <p class="text-indigo-200 text-sm leading-relaxed">Rigorous writing drills and homework.</p>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Practice</h3>
+                            <p class="text-slate-500 font-medium leading-relaxed">Rigorous writing drills and homework.</p>
+                        </div>
                     </div>
 
-                    <div class="bg-indigo-800/50 backdrop-blur-md p-8 rounded-2xl border border-indigo-400/30 text-center shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:bg-indigo-800/80 transition-all duration-300">
-                        <div class="w-16 h-16 mx-auto bg-white text-indigo-700 rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                            <span class="text-2xl font-bold">3</span>
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+                        <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center shadow-inner group-hover:bg-indigo-600 group-hover:text-white group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <span class="text-3xl font-bold font-sans">3</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Testing</h3>
-                        <p class="text-indigo-200 text-sm leading-relaxed">Weekly tests to track speed and accuracy.</p>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Testing</h3>
+                            <p class="text-slate-500 font-medium leading-relaxed">Weekly tests to track speed and accuracy.</p>
+                        </div>
                     </div>
 
-                    <div class="bg-indigo-800/50 backdrop-blur-md p-8 rounded-2xl border border-indigo-400/30 text-center shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:bg-indigo-800/80 transition-all duration-300">
-                        <div class="w-16 h-16 mx-auto bg-white text-indigo-700 rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                            <span class="text-2xl font-bold">4</span>
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+                        <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center shadow-inner group-hover:bg-indigo-600 group-hover:text-white group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300">
+                            <span class="text-3xl font-bold font-sans">4</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Feedback</h3>
-                        <p class="text-indigo-200 text-sm leading-relaxed">Correction loops with parents and students.</p>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Feedback</h3>
+                            <p class="text-slate-500 font-medium leading-relaxed">Correction loops with parents and students.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -421,92 +450,124 @@
                 <div class="carousel-container">
                     <div class="carousel-track">
                         
-                        <div class="carousel-item p-8 bg-slate-50 border border-slate-100 rounded-2xl hover:shadow-xl transition-shadow">
-                            <div class="flex justify-between items-start mb-6">
+                        <div class="carousel-item p-6 bg-white border border-slate-100 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://api.dicebear.com/9.x/micah/svg?seed=Rohan" alt="Profile" class="w-14 h-14 rounded-full border-2 border-indigo-100 bg-indigo-50">
                                 <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Rohan Das</h3>
-                                    <p class="text-sm text-slate-500 font-medium">Class 12, CBSE</p>
+                                    <h3 class="text-lg font-bold text-slate-900">Rohan Das</h3>
+                                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-0.5">
+                                        Class 12, CBSE <span class="text-indigo-200 mx-1">|</span> <span class="text-green-600 font-bold">98%</span>
+                                    </p>
                                 </div>
-                                <span class="px-3 py-1 bg-green-500 text-white text-sm font-bold rounded-lg shadow-green-200 shadow-lg">98%</span>
                             </div>
-                            <p class="text-slate-600 italic leading-relaxed">"Sir's grammar techniques helped me score full marks in the writing section. The best decision I made."</p>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">
+                                "Sir's grammar techniques helped me score full marks in the writing section. The best decision I made."
+                            </p>
                         </div>
 
-                        <div class="carousel-item p-8 bg-slate-50 border border-slate-100 rounded-2xl hover:shadow-xl transition-shadow">
-                            <div class="flex justify-between items-start mb-6">
+                        <div class="carousel-item p-6 bg-white border border-slate-100 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                             <div class="flex items-center gap-4 mb-4">
+                                <img src="https://api.dicebear.com/9.x/micah/svg?seed=Ananya" alt="Profile" class="w-14 h-14 rounded-full border-2 border-indigo-100 bg-indigo-50">
                                 <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Ananya Verma</h3>
-                                    <p class="text-sm text-slate-500 font-medium">Class 10, ICSE</p>
+                                    <h3 class="text-lg font-bold text-slate-900">Ananya Verma</h3>
+                                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-0.5">
+                                        Class 10, ICSE <span class="text-indigo-200 mx-1">|</span> <span class="text-green-600 font-bold">96%</span>
+                                    </p>
                                 </div>
-                                <span class="px-3 py-1 bg-green-500 text-white text-sm font-bold rounded-lg shadow-green-200 shadow-lg">96%</span>
                             </div>
-                            <p class="text-slate-600 italic leading-relaxed">"The weekly tests made me super confident before the actual board exams. Highly recommended!"</p>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">
+                                "The weekly tests made me super confident before the actual board exams. Highly recommended!"
+                            </p>
                         </div>
 
-                        <div class="carousel-item p-8 bg-slate-50 border border-slate-100 rounded-2xl hover:shadow-xl transition-shadow">
-                            <div class="flex justify-between items-start mb-6">
+                        <div class="carousel-item p-6 bg-white border border-slate-100 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                             <div class="flex items-center gap-4 mb-4">
+                                <img src="https://api.dicebear.com/9.x/micah/svg?seed=Kunal" alt="Profile" class="w-14 h-14 rounded-full border-2 border-indigo-100 bg-indigo-50">
                                 <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Kunal Singh</h3>
-                                    <p class="text-sm text-slate-500 font-medium">Class 12, State</p>
+                                    <h3 class="text-lg font-bold text-slate-900">Kunal Singh</h3>
+                                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-0.5">
+                                        Class 12, State <span class="text-indigo-200 mx-1">|</span> <span class="text-green-600 font-bold">94%</span>
+                                    </p>
                                 </div>
-                                <span class="px-3 py-1 bg-green-500 text-white text-sm font-bold rounded-lg shadow-green-200 shadow-lg">94%</span>
                             </div>
-                            <p class="text-slate-600 italic leading-relaxed">"I struggled with spoken English, but now I can converse fluently. Sir is very patient."</p>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">
+                                "I struggled with spoken English, but now I can converse fluently. Sir is very patient."
+                            </p>
                         </div>
 
-                        <div class="carousel-item p-8 bg-slate-50 border border-slate-100 rounded-2xl hover:shadow-xl transition-shadow">
-                            <div class="flex justify-between items-start mb-6">
+                        <div class="carousel-item p-6 bg-white border border-slate-100 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                             <div class="flex items-center gap-4 mb-4">
+                                <img src="https://api.dicebear.com/9.x/micah/svg?seed=Priya" alt="Profile" class="w-14 h-14 rounded-full border-2 border-indigo-100 bg-indigo-50">
                                 <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Priya Sharma</h3>
-                                    <p class="text-sm text-slate-500 font-medium">Class 10, CBSE</p>
+                                    <h3 class="text-lg font-bold text-slate-900">Priya Sharma</h3>
+                                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-0.5">
+                                        Class 10, CBSE <span class="text-indigo-200 mx-1">|</span> <span class="text-green-600 font-bold">99%</span>
+                                    </p>
                                 </div>
-                                <span class="px-3 py-1 bg-green-500 text-white text-sm font-bold rounded-lg shadow-green-200 shadow-lg">99%</span>
                             </div>
-                            <p class="text-slate-600 italic leading-relaxed">"The comprehensive study material covered everything. I didn't need any other reference book."</p>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">
+                                "The comprehensive study material covered everything. I didn't need any other reference book."
+                            </p>
                         </div>
 
-                        <div class="carousel-item p-8 bg-slate-50 border border-slate-100 rounded-2xl hover:shadow-xl transition-shadow">
-                            <div class="flex justify-between items-start mb-6">
+                        <div class="carousel-item p-6 bg-white border border-slate-100 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                             <div class="flex items-center gap-4 mb-4">
+                                <img src="https://api.dicebear.com/9.x/micah/svg?seed=Vikram" alt="Profile" class="w-14 h-14 rounded-full border-2 border-indigo-100 bg-indigo-50">
                                 <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Vikram Malhotra</h3>
-                                    <p class="text-sm text-slate-500 font-medium">Spoken English</p>
+                                    <h3 class="text-lg font-bold text-slate-900">Vikram Malhotra</h3>
+                                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-0.5">
+                                        Spoken English <span class="text-indigo-200 mx-1">|</span> <span class="text-indigo-600 font-bold">Fluent</span>
+                                    </p>
                                 </div>
-                                <span class="px-3 py-1 bg-indigo-500 text-white text-sm font-bold rounded-lg shadow-indigo-200 shadow-lg">Fluent</span>
                             </div>
-                            <p class="text-slate-600 italic leading-relaxed">"I landed my first job because I could speak confidently in the interview. Thank you Sir!"</p>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">
+                                "I landed my first job because I could speak confidently in the interview. Thank you Sir!"
+                            </p>
+                        </div>
+                        
+                        <div class="carousel-item p-6 bg-white border border-slate-100 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://api.dicebear.com/9.x/micah/svg?seed=Rohan" alt="Profile" class="w-14 h-14 rounded-full border-2 border-indigo-100 bg-indigo-50">
+                                <div>
+                                    <h3 class="text-lg font-bold text-slate-900">Rohan Das</h3>
+                                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-0.5">
+                                        Class 12, CBSE <span class="text-indigo-200 mx-1">|</span> <span class="text-green-600 font-bold">98%</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">
+                                "Sir's grammar techniques helped me score full marks in the writing section. The best decision I made."
+                            </p>
                         </div>
 
-                        <div class="carousel-item p-8 bg-slate-50 border border-slate-100 rounded-2xl hover:shadow-xl transition-shadow">
-                            <div class="flex justify-between items-start mb-6">
+                        <div class="carousel-item p-6 bg-white border border-slate-100 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                             <div class="flex items-center gap-4 mb-4">
+                                <img src="https://api.dicebear.com/9.x/micah/svg?seed=Ananya" alt="Profile" class="w-14 h-14 rounded-full border-2 border-indigo-100 bg-indigo-50">
                                 <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Rohan Das</h3>
-                                    <p class="text-sm text-slate-500 font-medium">Class 12, CBSE</p>
+                                    <h3 class="text-lg font-bold text-slate-900">Ananya Verma</h3>
+                                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-0.5">
+                                        Class 10, ICSE <span class="text-indigo-200 mx-1">|</span> <span class="text-green-600 font-bold">96%</span>
+                                    </p>
                                 </div>
-                                <span class="px-3 py-1 bg-green-500 text-white text-sm font-bold rounded-lg shadow-green-200 shadow-lg">98%</span>
                             </div>
-                            <p class="text-slate-600 italic leading-relaxed">"Sir's grammar techniques helped me score full marks in the writing section. The best decision I made."</p>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">
+                                "The weekly tests made me super confident before the actual board exams. Highly recommended!"
+                            </p>
                         </div>
 
-                        <div class="carousel-item p-8 bg-slate-50 border border-slate-100 rounded-2xl hover:shadow-xl transition-shadow">
-                            <div class="flex justify-between items-start mb-6">
+                         <div class="carousel-item p-6 bg-white border border-slate-100 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                             <div class="flex items-center gap-4 mb-4">
+                                <img src="https://api.dicebear.com/9.x/micah/svg?seed=Kunal" alt="Profile" class="w-14 h-14 rounded-full border-2 border-indigo-100 bg-indigo-50">
                                 <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Ananya Verma</h3>
-                                    <p class="text-sm text-slate-500 font-medium">Class 10, ICSE</p>
+                                    <h3 class="text-lg font-bold text-slate-900">Kunal Singh</h3>
+                                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-0.5">
+                                        Class 12, State <span class="text-indigo-200 mx-1">|</span> <span class="text-green-600 font-bold">94%</span>
+                                    </p>
                                 </div>
-                                <span class="px-3 py-1 bg-green-500 text-white text-sm font-bold rounded-lg shadow-green-200 shadow-lg">96%</span>
                             </div>
-                            <p class="text-slate-600 italic leading-relaxed">"The weekly tests made me super confident before the actual board exams. Highly recommended!"</p>
-                        </div>
-
-                        <div class="carousel-item p-8 bg-slate-50 border border-slate-100 rounded-2xl hover:shadow-xl transition-shadow">
-                            <div class="flex justify-between items-start mb-6">
-                                <div>
-                                    <h3 class="text-xl font-bold text-slate-900">Kunal Singh</h3>
-                                    <p class="text-sm text-slate-500 font-medium">Class 12, State</p>
-                                </div>
-                                <span class="px-3 py-1 bg-green-500 text-white text-sm font-bold rounded-lg shadow-green-200 shadow-lg">94%</span>
-                            </div>
-                            <p class="text-slate-600 italic leading-relaxed">"I struggled with spoken English, but now I can converse fluently. Sir is very patient."</p>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">
+                                "I struggled with spoken English, but now I can converse fluently. Sir is very patient."
+                            </p>
                         </div>
 
                     </div>
@@ -522,47 +583,51 @@
 
         <section id="classes" class="py-24 relative z-10">
             <div class="max-w-7xl mx-auto px-6">
-                <div class="grid md:grid-cols-2 gap-16">
-                    <div>
+                <div class="grid md:grid-cols-12 gap-12 items-start">
+                    
+                    <div class="md:col-span-4">
                         <h2 class="text-4xl font-bold text-white mb-6">Programs</h2>
-                        <p class="text-indigo-200 text-lg mb-8 max-w-md leading-relaxed">Comprehensive English tuition tailored for every stage of your academic journey.</p>
+                        <p class="text-indigo-200 text-lg mb-8 leading-relaxed">Comprehensive English tuition tailored for every stage of your academic journey.</p>
+                        
                         <div class="flex items-center gap-3 text-base font-semibold text-yellow-400 bg-yellow-400/10 inline-block px-4 py-2 rounded-lg border border-yellow-400/20">
                             <i data-lucide="map-pin" class="w-5 h-5"></i> Home Tuition &amp; Offline Center Available
                         </div>
                     </div>
 
-                    <div class="grid sm:grid-cols-2 gap-4">
-                        <div class="group p-6 bg-indigo-900/40 backdrop-blur border border-indigo-500/30 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:bg-indigo-600 transition-all duration-300 cursor-default">
-                            <div class="flex items-center gap-3 mb-3">
-                                <i data-lucide="book-open" class="w-6 h-6 text-cyan-300 group-hover:text-white"></i>
-                                <h3 class="font-bold text-white text-lg">Class 6 - 10</h3>
+                    <div class="md:col-span-8 grid sm:grid-cols-2 gap-6">
+                        
+                        <div class="group p-8 rounded-3xl bg-[#e9ecef] hover:bg-[#6c757d] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 cursor-default">
+                            <div class="flex items-center gap-4 mb-3">
+                                <i data-lucide="book-open" class="w-7 h-7 text-indigo-600 group-hover:text-white transition-colors"></i>
+                                <h3 class="font-bold text-slate-900 group-hover:text-white text-xl transition-colors">Class 6 - 10</h3>
                             </div>
-                            <p class="text-sm text-indigo-200 group-hover:text-indigo-50">Foundation building, Grammar, Literature &amp; Comprehension.</p>
+                            <p class="text-sm text-slate-600 font-medium group-hover:text-white/90 transition-colors">Foundation building, Grammar, Literature &amp; Comprehension.</p>
                         </div>
                         
-                        <div class="group p-6 bg-indigo-900/40 backdrop-blur border border-indigo-500/30 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:bg-indigo-600 transition-all duration-300 cursor-default">
-                            <div class="flex items-center gap-3 mb-3">
-                                <i data-lucide="graduation-cap" class="w-6 h-6 text-cyan-300 group-hover:text-white"></i>
-                                <h3 class="font-bold text-white text-lg">Class 11 - 12</h3>
+                        <div class="group p-8 rounded-3xl bg-[#e9ecef] hover:bg-[#6c757d] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 cursor-default">
+                            <div class="flex items-center gap-4 mb-3">
+                                <i data-lucide="graduation-cap" class="w-7 h-7 text-indigo-600 group-hover:text-white transition-colors"></i>
+                                <h3 class="font-bold text-slate-900 group-hover:text-white text-xl transition-colors">Class 11 - 12</h3>
                             </div>
-                            <p class="text-sm text-indigo-200 group-hover:text-indigo-50">Advanced writing skills, Prose, Poetry &amp; Board Prep.</p>
+                            <p class="text-sm text-slate-600 font-medium group-hover:text-white/90 transition-colors">Advanced writing skills, Prose, Poetry &amp; Board Prep.</p>
                         </div>
 
-                        <div class="group p-6 bg-indigo-900/40 backdrop-blur border border-indigo-500/30 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:bg-indigo-600 transition-all duration-300 cursor-default">
-                            <div class="flex items-center gap-3 mb-3">
-                                <i data-lucide="mic" class="w-6 h-6 text-cyan-300 group-hover:text-white"></i>
-                                <h3 class="font-bold text-white text-lg">Spoken English</h3>
+                        <div class="group p-8 rounded-3xl bg-[#e9ecef] hover:bg-[#6c757d] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 cursor-default">
+                            <div class="flex items-center gap-4 mb-3">
+                                <i data-lucide="mic" class="w-7 h-7 text-indigo-600 group-hover:text-white transition-colors"></i>
+                                <h3 class="font-bold text-slate-900 group-hover:text-white text-xl transition-colors">Spoken English</h3>
                             </div>
-                            <p class="text-sm text-indigo-200 group-hover:text-indigo-50">Fluency training, pronunciation, and public speaking confidence.</p>
+                            <p class="text-sm text-slate-600 font-medium group-hover:text-white/90 transition-colors">Fluency training, pronunciation, and public speaking confidence.</p>
                         </div>
 
-                        <div class="group p-6 bg-indigo-900/40 backdrop-blur border border-indigo-500/30 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:bg-indigo-600 transition-all duration-300 cursor-default">
-                            <div class="flex items-center gap-3 mb-3">
-                                <i data-lucide="file-text" class="w-6 h-6 text-cyan-300 group-hover:text-white"></i>
-                                <h3 class="font-bold text-white text-lg">Grammar Pro</h3>
+                        <div class="group p-8 rounded-3xl bg-[#e9ecef] hover:bg-[#6c757d] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 cursor-default">
+                            <div class="flex items-center gap-4 mb-3">
+                                <i data-lucide="file-text" class="w-7 h-7 text-indigo-600 group-hover:text-white transition-colors"></i>
+                                <h3 class="font-bold text-slate-900 group-hover:text-white text-xl transition-colors">Grammar Pro</h3>
                             </div>
-                            <p class="text-sm text-indigo-200 group-hover:text-indigo-50">Specialized short-term batches for mastering Grammar.</p>
+                            <p class="text-sm text-slate-600 font-medium group-hover:text-white/90 transition-colors">Specialized short-term batches for mastering Grammar.</p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -595,7 +660,7 @@
                                 </div>
                                 <div>
                                     <p class="text-xs font-bold text-indigo-300 uppercase tracking-wide">WhatsApp</p>
-                                    <button class="text-lg font-bold hover:text-yellow-300 transition-colors underline decoration-dashed">Chat on WhatsApp</button>
+                                    <button class="text-lg font-bold hover:text-yellow-300 transition-colors">Chat on WhatsApp</button>
                                 </div>
                             </div>
 
@@ -616,17 +681,17 @@
                             <div class="grid grid-cols-2 gap-6">
                                 <div class="space-y-2">
                                     <label class="text-xs font-bold text-slate-500 uppercase">Student Name</label>
-                                    <input type="text" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all" placeholder="Enter name">
+                                    <input type="text" id="studentName" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all" placeholder="Enter name">
                                 </div>
                                 <div class="space-y-2">
                                     <label class="text-xs font-bold text-slate-500 uppercase">I am a</label>
-                                    <div class="flex items-center gap-4 h-[50px]">
+                                    <div id="radioContainer" class="flex items-center gap-4 h-[50px] px-3 rounded-xl border border-transparent transition-all">
                                         <label class="inline-flex items-center cursor-pointer">
-                                            <input type="radio" name="user_type" class="w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-600 accent-indigo-600">
+                                            <input type="radio" name="user_type" id="typeParent" class="w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-600 accent-indigo-600">
                                             <span class="ml-2 text-slate-700 font-medium">Parent</span>
                                         </label>
                                         <label class="inline-flex items-center cursor-pointer">
-                                            <input type="radio" name="user_type" class="w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-600 accent-indigo-600">
+                                            <input type="radio" name="user_type" id="typeStudent" class="w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-600 accent-indigo-600">
                                             <span class="ml-2 text-slate-700 font-medium">Student</span>
                                         </label>
                                     </div>
@@ -637,15 +702,15 @@
                                 <div class="space-y-2">
                                     <label class="text-xs font-bold text-slate-500 uppercase">Class</label>
                                     <div class="relative">
-                                        <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all appearance-none">
+                                        <select id="classSelect" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all appearance-none">
                                             <option>Class 6</option>
                                             <option>Class 7</option>
                                             <option>Class 8</option>
                                             <option>Class 9</option>
-                                            <option>Class 10 (Board)</option>
+                                            <option>Class 10</option>
                                             <option>Class 11</option>
-                                            <option>Class 12 (Board)</option>
-                                            <option>Spoken English</option>
+                                            <option>Class 12</option>
+                                            <option>Higher Studies</option>
                                         </select>
                                         <i data-lucide="chevron-down" class="absolute right-4 top-3.5 w-5 h-5 text-slate-400 pointer-events-none"></i>
                                     </div>
@@ -653,10 +718,11 @@
                                 <div class="space-y-2">
                                     <label class="text-xs font-bold text-slate-500 uppercase">Board</label>
                                     <div class="relative">
-                                        <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all appearance-none">
+                                        <select id="boardSelect" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all appearance-none">
                                             <option>CBSE</option>
                                             <option>ICSE</option>
                                             <option>State Board</option>
+                                            <option>Spoken English</option>
                                             <option>Other Exams</option>
                                         </select>
                                         <i data-lucide="chevron-down" class="absolute right-4 top-3.5 w-5 h-5 text-slate-400 pointer-events-none"></i>
@@ -666,12 +732,12 @@
 
                             <div class="space-y-2">
                                 <label class="text-xs font-bold text-slate-500 uppercase">Message</label>
-                                <textarea rows="3" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all" placeholder="How can we help?"></textarea>
+                                <textarea id="messageArea" rows="3" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all" placeholder="How can we help?"></textarea>
                             </div>
 
                             <div class="group relative w-full">
                                 <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 rounded-full blur opacity-20 group-hover:opacity-50 transition duration-500 group-hover:duration-200 will-change-transform"></div>
-                                <button type="submit" class="relative flex items-center justify-center gap-3 px-8 py-4 bg-neutral-900 rounded-xl leading-none text-neutral-50 transition-all duration-300 ease-out border border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] hover:border-white/20 hover:bg-neutral-800 hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-neutral-700 focus:ring-offset-2 focus:ring-offset-neutral-950 overflow-hidden w-full">
+                                <button type="submit" id="submitBtn" class="relative flex items-center justify-center gap-3 px-8 py-4 bg-neutral-900 rounded-xl leading-none text-neutral-50 transition-all duration-300 ease-out border border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] hover:border-white/20 hover:bg-neutral-800 hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-neutral-700 focus:ring-offset-2 focus:ring-offset-neutral-950 overflow-hidden w-full">
                                     <span class="absolute inset-0 w-full h-full -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out z-0 pointer-events-none">
                                         <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent w-1/2 -skew-x-12 transform origin-left"></span>
                                     </span>
@@ -679,7 +745,6 @@
                                     <span class="relative z-10 text-indigo-400 group-hover:text-white transition-all duration-300 group-hover:translate-x-1">
                                         <i data-lucide="send" class="w-5 h-5"></i>
                                     </span>
-                                    
                                 </button>
                             </div>
                         </form>
@@ -687,6 +752,23 @@
                 </div>
             </div>
         </section>
+    </div>
+
+    <div id="waModal" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm transition-opacity">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-[90%] shadow-2xl transform scale-100 transition-transform">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Connect via WhatsApp</h3>
+            <p class="text-slate-500 mb-8">How would you like to open WhatsApp?</p>
+            
+            <div class="space-y-4">
+                <button id="btnWaWeb" class="w-full py-4 rounded-xl bg-slate-100 text-slate-700 font-bold hover:bg-slate-200 transition-colors flex items-center justify-center gap-3">
+                    <i data-lucide="globe" class="w-5 h-5"></i> WhatsApp Web
+                </button>
+                <button id="btnWaApp" class="w-full py-4 rounded-xl bg-green-500 text-white font-bold hover:bg-green-600 transition-colors flex items-center justify-center gap-3 shadow-lg shadow-green-200">
+                    <i data-lucide="monitor" class="w-5 h-5"></i> Desktop App
+                </button>
+            </div>
+            <button onclick="document.getElementById('waModal').classList.add('hidden')" class="mt-6 text-sm text-slate-400 font-medium hover:text-slate-600 w-full text-center">Cancel</button>
+        </div>
     </div>
 
     <footer id="main-footer" class="fixed bottom-0 left-0 w-full z-0 bg-[#14213d] rounded-t-[3rem] border-t border-white/20 pt-16 pb-8 text-slate-200">
@@ -875,6 +957,172 @@
         adjustLayout();
         handleScroll();
         setTimeout(adjustLayout, 100);
+
+        // --- NEW: AUTO-FILL, BOARD LOGIC & REDIRECT ---
+        
+        const nameInput = document.getElementById('studentName');
+        const typeParent = document.getElementById('typeParent');
+        const typeStudent = document.getElementById('typeStudent');
+        const radioContainer = document.getElementById('radioContainer');
+        const classSelect = document.getElementById('classSelect');
+        const boardSelect = document.getElementById('boardSelect');
+        const messageArea = document.getElementById('messageArea');
+        const submitBtn = document.getElementById('submitBtn');
+        const waModal = document.getElementById('waModal');
+
+        // Helper to toggle error styles
+        function toggleError(element, isError) {
+            if (isError) {
+                element.classList.add('border-red-500', 'ring-1', 'ring-red-500');
+                // Only remove slate border if it's NOT the radio container (which is transparent)
+                if(element !== radioContainer) {
+                    element.classList.remove('border-slate-200');
+                }
+            } else {
+                element.classList.remove('border-red-500', 'ring-1', 'ring-red-500');
+                if(element !== radioContainer) {
+                    element.classList.add('border-slate-200');
+                }
+            }
+        }
+
+        // Logic for "Other Exams" or "Spoken English" disabling Class
+        boardSelect.addEventListener('change', () => {
+            const val = boardSelect.value;
+            if (val === 'Other Exams' || val === 'Spoken English') {
+                classSelect.disabled = true;
+                classSelect.classList.add('opacity-50', 'cursor-not-allowed');
+                classSelect.value = ''; // Clear selection
+                toggleError(classSelect, false); // Clear error if disabled
+            } else {
+                classSelect.disabled = false;
+                classSelect.classList.remove('opacity-50', 'cursor-not-allowed');
+                // Set default if empty or invalid
+                if (!classSelect.value || classSelect.value === 'Higher Studies') {
+                    classSelect.value = 'Class 6';
+                }
+            }
+            toggleError(boardSelect, false);
+            updateMessage(); 
+        });
+
+        // Logic for "Higher Studies" disabling Board
+        classSelect.addEventListener('change', () => {
+            const val = classSelect.value;
+            if (val === 'Higher Studies') {
+                boardSelect.disabled = true;
+                boardSelect.classList.add('opacity-50', 'cursor-not-allowed');
+                boardSelect.value = ''; // Clear selection
+                toggleError(boardSelect, false); // Clear error if disabled
+            } else {
+                boardSelect.disabled = false;
+                boardSelect.classList.remove('opacity-50', 'cursor-not-allowed');
+                // Set default if empty or invalid
+                if (!boardSelect.value || boardSelect.value === 'Spoken English' || boardSelect.value === 'Other Exams') {
+                    boardSelect.value = 'CBSE';
+                }
+            }
+            toggleError(classSelect, false);
+            updateMessage();
+        });
+
+        // Clear errors on input
+        nameInput.addEventListener('input', () => {
+            toggleError(nameInput, false);
+            updateMessage();
+        });
+        messageArea.addEventListener('input', () => toggleError(messageArea, false));
+        
+        function clearRadioError() {
+             toggleError(radioContainer, false);
+             updateMessage();
+        }
+
+        typeParent.addEventListener('change', clearRadioError);
+        typeStudent.addEventListener('change', clearRadioError);
+
+        // Auto-fill Message Logic
+        function updateMessage() {
+            const name = nameInput.value.trim();
+            const className = classSelect.value;
+            const board = boardSelect.value;
+            const isParent = typeParent.checked;
+            const isStudent = typeStudent.checked;
+
+            if (name && (isParent || isStudent)) {
+                let msg = "";
+                // Handle different combinations of valid fields
+                const classText = (!classSelect.disabled && className) ? `, currently in ${className}` : "";
+                const boardText = (!boardSelect.disabled && board) ? ` under ${board} board` : "";
+                
+                // If specific combinations are active (e.g. Higher Studies has no board)
+                // If "Spoken English" board is selected, class is empty.
+                
+                if (isStudent) {
+                    msg = `Hello! I am ${name}${classText}${boardText}. I am really eager to learn english from you.`;
+                } else {
+                    msg = `Hello! I am parent of ${name}${classText}${boardText}. My child is really eager to learn english from you.`;
+                }
+                messageArea.value = msg;
+            }
+        }
+
+        // Redirect Logic with Validation
+        submitBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+
+            // Name Validation
+            if (!nameInput.value.trim()) {
+                toggleError(nameInput, true);
+                isValid = false;
+            }
+
+            // Class Validation (if enabled)
+            if (!classSelect.disabled && !classSelect.value) {
+                toggleError(classSelect, true);
+                isValid = false;
+            }
+
+            // Board Validation (if enabled)
+            if (!boardSelect.disabled && !boardSelect.value) {
+                toggleError(boardSelect, true);
+                isValid = false;
+            }
+            
+            // Radio Validation
+            if (!typeParent.checked && !typeStudent.checked) {
+                toggleError(radioContainer, true);
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            const msg = encodeURIComponent(messageArea.value);
+            const phone = "919876543210"; // Placeholder Number
+
+            // Detect Mobile
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+            if (isMobile) {
+                 window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+            } else {
+                 // Show Modal for Desktop
+                 waModal.classList.remove('hidden');
+                 
+                 document.getElementById('btnWaWeb').onclick = () => {
+                    window.open(`https://web.whatsapp.com/send?phone=${phone}&text=${msg}`, '_blank');
+                    waModal.classList.add('hidden');
+                 };
+
+                 document.getElementById('btnWaApp').onclick = () => {
+                    window.open(`whatsapp://send?phone=${phone}&text=${msg}`, '_blank');
+                    waModal.classList.add('hidden');
+                 };
+            }
+        });
+
     </script>
 
 </body>
